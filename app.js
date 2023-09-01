@@ -5,7 +5,7 @@ const app = express()
 const session = require("express-session")
 const port = 3000
 const bodyParser = require('body-parser')
-const router = require("./router")
+const router = require("./router/router")
 const nocache = require("nocache")
 
 // view engine
