@@ -18,7 +18,7 @@
             <h3>Login</h3>
           </div>
           <div class="card-body">
-            <form action="/route/login" method="POST">
+            <form action="/route/login" method="post">
               <div class="mb-3">
                 <label for="username" class="form-label">Username</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
@@ -29,9 +29,9 @@
                   placeholder="Enter your password">
               </div>
               <button type="submit" class="btn btn-primary">Login</button><br>
-              <h2 class="text-danger">
+              <h5 class="text-danger">
                 <%= data %>
-              </h2>
+              </h5>
             </form>
           </div>
         </div>

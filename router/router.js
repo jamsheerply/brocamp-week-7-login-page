@@ -15,14 +15,4 @@ router.post("/login", (req, res) => {
     res.redirect("/invalid")
   }
 })
-// router.get("/logout",(req,res)=>{
-//   req.session.destroy((err)=>{
-//     if(err){
-//       console.log(err)
-//     }else{
-//       res.render("index",{data:"logout sucesssfully"})
-//     }
-//   })
-// })
-
 module.exports=router

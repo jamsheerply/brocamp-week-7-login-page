@@ -45,7 +45,7 @@ app.get("/home",(req,res)=>{
   if(req.session.user){ 
     res.render("home.ejs")
   }else{
-    res.send("unauthorize User")
+    res.render("index",{data:""})
   }
 })
 app.get("/logout",(req,res)=>{
@@ -53,7 +53,7 @@ app.get("/logout",(req,res)=>{
     if(err){
       console.log(err)
     }else{
-      res.render("index",{data:"logout sucesssfully"})
+      res.render("index",{data:"logout successfully"})
     }
   })
 })
